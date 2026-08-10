@@ -53,6 +53,10 @@ const gameController = (function () {
           }
         }
 
+        if(gameBoard.getBoard().every(cell => cell !== "")) {
+          console.log("It's full")
+        }
+
         // 4. The Switch
         if (activePlayer === playerOne) {
           activePlayer = playerTwo;
