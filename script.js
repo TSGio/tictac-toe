@@ -1,6 +1,13 @@
 const gameBoard = (function () {
   const arr = ["", "", "", "", "", "", "", "", ""];
   
+const squares = document.querySelectorAll(".game-board div");
+
+squares.forEach(square => square.addEventListener("click", () => {
+  console.log("I was clicked!")
+
+}))
+
   return {
     getBoard: function () {
       return arr;
