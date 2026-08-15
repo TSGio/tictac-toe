@@ -4,7 +4,8 @@ const gameBoard = (function () {
 const squares = document.querySelectorAll(".game-board div");
 
 squares.forEach(square => square.addEventListener("click", () => {
-  console.log("I was clicked!")
+  gameController.playRound(square.getAttribute("data-columns"));
+  console.log(gameBoard.getBoard());
 
 }))
 

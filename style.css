@@ -3,4 +3,12 @@
   grid-template-columns: auto auto auto;
   background-color: dodgerblue;
   padding: 10px;
+  gap: 5px;
+
+}
+
+.game-board div {
+  height: 100px;
+  background-color: lightgray;
+
 }
